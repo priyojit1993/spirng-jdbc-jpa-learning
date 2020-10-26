@@ -1,4 +1,4 @@
-package com.springlearning.springjpahibernatelearning;
+package com.springlearning.springjpahibernatelearning.spring_jdbc;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,14 +16,14 @@ import java.util.List;
 import java.util.UUID;
 
 @SpringBootApplication
-public class SpringJpaHibernateLearningApplication implements CommandLineRunner {
+public class SpringJdbcLearningApplication implements CommandLineRunner {
     final Logger logger = LoggerFactory.getLogger(getClass().getName());
     final ObjectMapper objectMapper = new ObjectMapper();
     @Autowired
     public PersonDAOSpringJDBC personDAOSpringJDBC;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringJpaHibernateLearningApplication.class, args);
+        SpringApplication.run(SpringJdbcLearningApplication.class, args);
     }
 
     @Override
